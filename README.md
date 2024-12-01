@@ -8,3 +8,5 @@ The solutions found in this repository are fully created by me (Daan Wichmann). 
 
 Description of the Advent of Code from the official website:
 > Advent of Code is an Advent calendar of small programming puzzles for a variety of skill levels that can be solved in any programming language you like. People use them as interview prep, company training, university coursework, practice problems, a speed contest, or to challenge each other.
+
+More information concerning the AoC can be found on [adventofcode.com](https://adventofcode.com/2024/about)
