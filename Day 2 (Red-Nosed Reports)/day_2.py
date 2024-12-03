@@ -26,15 +26,17 @@ def part2(reports: list) -> int:
     for report in reports:
         if safe(report):
             safe_reports += 1
-        else:
-            # This is the most ugly ass bruteforcing code I've written all year
-            for i in range(report.size):
-                report_copy = list(report.copy())
-                report_copy.pop(i)
-                report_copy = np.array(report_copy)
-                if safe(report_copy):
-                    safe_reports += 1
-                    break
+            continue
+
+        # This is the most ugly ass bruteforcing code I've written all year
+        for i in range(report.size):
+            report_copy = list(report.copy())
+            report_copy.pop(i)
+            report_copy = np.array(report_copy)
+            if safe(report_copy):
+                safe_reports += 1
+                break
+
     return safe_reports
 
 
@@ -43,5 +45,3 @@ if __name__ == "__main__":
     part1, part2 = part1(reports), part2(reports)
     print(f"The answer of part 1 is: {part1}")
     print(f"The answer of part 2 is: {part2}")
-
-
