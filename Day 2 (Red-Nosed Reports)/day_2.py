@@ -28,7 +28,7 @@ def part2(reports: list) -> int:
             safe_reports += 1
             continue
 
-        # This is the most ugly ass bruteforcing code I've written all year
+        # This is the most ugly bruteforcing code I've written all year
         for i in range(report.size):
             report_copy = list(report.copy())
             report_copy.pop(i)
